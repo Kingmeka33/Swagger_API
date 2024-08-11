@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace cmpg323project2.Repository.Models
+namespace cmpg323project2.Models
 {
     [Table("Project", Schema = "Config")]
     public partial class Project

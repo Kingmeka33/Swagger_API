@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace cmpg323project2.Repository.Models
+namespace cmpg323project2.Models
 {
     [Table("Client", Schema = "Config")]
     public partial class Client
@@ -16,5 +16,11 @@ namespace cmpg323project2.Repository.Models
         public string? PrimaryContactEmail { get; set; }
         [Column(TypeName = "datetime")]
         public DateTime? DateOnboarded { get; set; }
+
+    }
+    public class SavingsResult
+    {
+        public double TotalTimeSaved { get; set; }
+        public decimal TotalCostSaved { get; set; }
     }
 }

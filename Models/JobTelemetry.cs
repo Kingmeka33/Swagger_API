@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace cmpg323project2.Repository.Models
+namespace cmpg323project2.Models
 {
     [Table("JobTelemetry", Schema = "Telemetry")]
     public partial class JobTelemetry
@@ -39,5 +39,14 @@ namespace cmpg323project2.Repository.Models
         public string? AdditionalInfo { get; set; }
         [Column(TypeName = "datetime")]
         public DateTime EntryDate { get; set; }
-    }
+        
+        public int ClientId { get; set; }  
+        public Client Client { get; set; }
+        public int ProjectId { get; set; }  
+        public Project Project { get; set; }
+        public DateTime Date { get; set; }
+        public int TimeSaved { get; set; }  
+        public decimal CostSaved{ get; set; }
+
+        }
 }

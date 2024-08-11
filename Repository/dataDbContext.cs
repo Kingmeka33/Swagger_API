@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using cmpg323project2.Repository.Models;
+using cmpg323project2.Models;
 
 namespace cmpg323project2.Repository
 {
